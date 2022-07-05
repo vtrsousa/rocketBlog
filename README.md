@@ -7,4 +7,4 @@ https://www.figma.com/file/r4CsL6MPTAvE7EvJXjhFK4/DD-%2F-RocketBlog/duplicate?no
 
 *Requisitos*
 
-    • Seguir o layout do Figma.
+  • Seguir o layout do Figma.
