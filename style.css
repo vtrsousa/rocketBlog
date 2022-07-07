@@ -49,6 +49,19 @@ body{
     margin: 0 auto;
 }
 
+.section{
+
+    padding: 2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    flex-wrap: wrap;
+}
+
 .grid{
     display: grid;
     gap: 1rem;
@@ -176,23 +189,13 @@ body{
     height: 1.1rem;
 }
 
-.section{
-    padding: 2rem;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    position: relative;
-}
-
 .bgColor{
     background-color: var(--purple-bg);
 }
 
 .banner{
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
 
     gap: 2.5rem;
@@ -211,7 +214,6 @@ body{
 }
 
 .textBanner{
-    max-width: 30rem;
     font: 400 1.125rem 'Poppins';
 }
 
@@ -238,6 +240,85 @@ body{
     top: 4px;
 }
 
-.imgBanner{
-    max-width: 32rem;
+.imgBanner img{
+    max-width: 100%;
+}
+
+.posts{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    gap: 8rem;
+}
+
+.postInitial img,
+.postPreviewFinal img{
+    max-width: 35.56rem;
+}
+
+.postData{
+    font: 300 1rem 'Roboto';
+    color: black;
+    padding: 0.5rem 0;
+}
+
+.postTitle{
+    font: 700 1.5rem 'Roboto';
+    color: black;
+    padding: 0.5rem 0;
+}
+
+.postDescription{
+    font: 400 1rem 'Roboto';
+    line-height: 1.5rem;
+    color: black;
+    padding: 0.5rem 0;
+}
+
+.postPreviewInitial .postData{
+    padding: 0;
+}
+
+#postLine{
+    width: 100%;
+    height: 1px;
+
+    margin: 1.5rem 0;
+
+    background-color: #EEEEEE;
+}
+
+.postPreview{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+
+    gap: 2.5rem
+}
+
+.postPreviewFinal .postData{
+    font: 300 0.8rem 'Roboto';
+    color: black;
+    padding: 0.5rem 0;
+}
+
+.postPreviewFinal .postTitle{
+    font: 700 1.25rem 'Roboto';
+    color: black;
+    padding: 0.5rem 0;
+}
+
+.postPreviewFinal .postDescription{
+    font: 400 0.8rem 'Roboto';
+    line-height: 1.2rem;
+    color: black;
+    padding: 0.5rem 0;
+}
+
+footer{
+    width: 100%;
+    height: 6px;
+
+    background-color: #4fff4b;
 }
