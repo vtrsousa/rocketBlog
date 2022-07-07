@@ -20,6 +20,10 @@ a{
     text-decoration: none;
 }
 
+p{
+    line-height: 2rem;
+}
+
 :root {
     --purple-bg: #290742;
     --dark-bg: #170027;
@@ -32,11 +36,12 @@ a{
 html{ 
     scroll-behavior: smooth;
 
-    font: 400 1.3rem 'Poppins';
+    font: 400 1.2rem 'Poppins';
 }
 
 body{
     min-height: 100%;
+    background-color: var(--light-purple);
 }
 
 .container{
@@ -46,7 +51,7 @@ body{
 
 .grid{
     display: grid;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .section{
@@ -64,6 +69,7 @@ body{
 
     display: flex;
     align-items: center;
+    align-content: center;
     justify-content: space-between;
 }
 
@@ -81,6 +87,7 @@ body{
 .menu ul{
     display: flex;
     align-items: center;
+    align-content: center;
     justify-content: space-between;
 }
 
@@ -185,8 +192,10 @@ body{
 
 .banner{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+
+    gap: 2.5rem;
 }
 
 .banner::after{
@@ -202,22 +211,33 @@ body{
 }
 
 .textBanner{
+    max-width: 30rem;
     font: 400 1.125rem 'Poppins';
 }
 
 .textBanner h1{
-    font: 700 2rem 'Poppins';
+    font: 700 1.5rem 'Poppins';
     color: var(--button-bg);
 }
 
 .textBanner p{
     color: var(--white);
+    margin: 1rem 0;
 }
 
-.textBanner p:nth-child(3){
+.textBanner a{
     color: var(--button-bg);
+    position: relative;
 }
 
-.textBanner p:nth-child(3)::after{
-    content: '';
+.textBanner a::after{
+    content: url('assets/arrow-right.svg');
+
+    position:absolute;
+    left:115px;
+    top: 4px;
+}
+
+.imgBanner{
+    max-width: 32rem;
 }
